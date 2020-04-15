@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from keras.models import load_model
 from keras.backend import set_session
 from skimage.transfrom import resize
-import tensorflow as tfH
+import tensorflow as tf
 import numpy as np
 
 global sess

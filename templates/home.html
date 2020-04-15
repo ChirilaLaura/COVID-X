@@ -1,0 +1,87 @@
+<html>
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CovidX</title>
+
+  <script src="{{ url_for('static', filename='js/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='js/boootstrap.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='js/tether.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='js/custom.js')}}" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href = "{{ url_for('static', filename='css/bootstrap.css')}}">
+  <link rel="stylesheet" href = "{{ url_for('static', filename='css/style.css')}}">
+  <link rel="stylesheet" href = "{{ url_for('static', filename='css/card_flips.css')}}">
+</head>
+
+<body>
+  <div class="container mt-lg-6 mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-12">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <center>
+                  <div class="card">
+                    <img class="card-img-top"
+                      src="{{ url_for('static', filename='assets/corona_photo1.jpg')}}"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5>Numar de infectati</h5>
+                      <p class="card-text">Numar de infectati la nivel global</p>
+                    </div>
+                  </div>
+                </center>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-header">Numar Infectati</div>
+                  <div class="card-body">
+                    <p class="card-text">Lorem Ipsulum</p>
+                    <div class="row">
+                      <div class="col-12">
+                        <a href="/CovidX/numar_infectati" class="btn btn-primary btn-md">Numar Infectati</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mt-lg-0 mt-2">
+          <div class="image-flip" ontouchstart="this.classList.toogle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <center>
+                  <div class="card">
+                    <img class="card-img-top" src="{{ url_for('static', filename='assets/diagnosis.jpg')}}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5>Analiza RMN plamani</h5>
+                      <p class="card-text">LOpsum is slemeum</p>
+                    </div>
+                  </div>
+                </center>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-header">Analiza RMN plamani</div>
+                    <p>AI-ul printr-un model antrenat de noi, va spune, in urma scanarii rmn-ului, daca esti infectat cu covid-19 sau nu</p>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-12">
+                    <a href="/CovidX/analiza_rmn" class="btn btn-primary btn-md">Analiza RMN</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
